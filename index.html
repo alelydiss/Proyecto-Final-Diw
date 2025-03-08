@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inicio - Gestor de Incidencias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="build/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Gestor de Incidencias</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Inicio de Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="display-3 fw-bold">Gestión Inteligente de Incidencias</h1>
+            <p class="lead">Optimiza el mantenimiento de tu centro educativo con nuestra plataforma avanzada.</p>
+            <a href="registro.html" class="btn btn-light btn-lg">Regístrate Gratis</a>
+        </div>
+        <svg class="wave" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L60,234.7C120,213,240,171,360,170.7C480,171,600,213,720,224C840,235,960,213,1080,176C1200,139,1320,85,1380,58.7L1440,32V320H1380C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320H0Z"></path></svg>
+    </div>
+
+    <!-- Sección de Servicios -->
+    <div class="container my-5">
+        <h2 class="text-center fw-bold">¿Qué ofrecemos?</h2>
+        <div class="row text-center mt-4">
+            <div class="col-md-4">
+                <i class="bi bi-shield-lock display-3 text-primary"></i>
+                <h4 class="fw-bold">Seguridad</h4>
+                <p>Protección total de datos y control de accesos.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-speedometer2 display-3 text-success"></i>
+                <h4 class="fw-bold">Rapidez</h4>
+                <p>Reporta y resuelve incidencias en tiempo récord.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-bar-chart-line display-3 text-danger"></i>
+                <h4 class="fw-bold">Estadísticas</h4>
+                <p>Monitorea incidencias con gráficos detallados.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonios -->
+    <div class="container my-5">
+        <h2 class="text-center fw-bold">Testimonios</h2>
+        <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <p class="lead">"Esta plataforma nos ha ahorrado muchísimo tiempo en la gestión de incidencias."</p>
+                    <strong>- María López, Directora IT</strong>
+                </div>
+                <div class="carousel-item">
+                    <p class="lead">"Sencilla, rápida y eficiente. ¡Recomendada para cualquier centro educativo!"</p>
+                    <strong>- Carlos Jiménez, Jefe dp. Informatica</strong>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Sección de Contacto -->
+    <div class="container my-5">
+        <h2 class="text-center fw-bold">Contáctanos</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mensaje</label>
+                        <textarea class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="p-3 border rounded bg-light">
+                    <h5><i class="bi bi-geo-alt-fill text-danger"></i> Ubicación</h5>
+                    <p>Calle 123, Ciudad, Pais</p>
+                    <h5><i class="bi bi-envelope-fill text-primary"></i> Email</h5>
+                    <p>soporte@incidencias.com</p>
+                    <h5><i class="bi bi-telephone-fill text-success"></i> Teléfono</h5>
+                    <p>+34 600 123 456</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2024 Gestor de Incidencias | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

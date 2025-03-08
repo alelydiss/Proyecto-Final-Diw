@@ -1,0 +1,27 @@
+{
+  "name": "proyecto-final-diw",
+  "version": "1.0.0",
+  "description": "proyecto final diw",
+  "homepage": "https://github.com/alelydiss/Proyecto-Final-Diw#readme",
+  "bugs": {
+    "url": "https://github.com/alelydiss/Proyecto-Final-Diw/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alelydiss/Proyecto-Final-Diw.git"
+  },
+  "license": "ISC",
+  "author": "Alejandro Vazquez Moreno",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "compilar": "sass --watch src/scss:build/css"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.85.1"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3"
+  }
+}

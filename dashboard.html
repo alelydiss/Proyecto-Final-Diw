@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link href="build/css/style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Gestor de Incidencias</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="incidencias.html">Incidencias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-danger text-white px-3" href="#">Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Panel de Control</h2>
+
+        <!-- Tarjetas de Estado -->
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card incidencias bg-primary text-white shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Incidencias Activas</h5>
+                        <p class="card-text fs-4">15 en proceso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card incidencias bg-success text-white shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Incidencias Resueltas</h5>
+                        <p class="card-text fs-4">40 este mes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card incidencias bg-danger text-white shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Problemas Urgentes</h5>
+                        <p class="card-text fs-4">3 críticas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gráfica de Incidencias -->
+        <div class="mt-5">
+            <h4 class="text-center mb-3">Incidencias Reportadas Mensualmente</h4>
+            <canvas id="graficoIncidencias"></canvas>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('graficoIncidencias').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+                datasets: [{
+                    label: 'Incidencias Reportadas',
+                    data: [12, 19, 15, 8, 17, 10],
+                    backgroundColor: ['#007bff', '#28a745', '#dc3545', '#ffc107', '#6610f2', '#17a2b8'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'top' }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
