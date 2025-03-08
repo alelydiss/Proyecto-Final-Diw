@@ -15,10 +15,12 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "compilar": "sass --watch src/scss:build/css"
+    "compilar": "sass --watch src/scss:build/css",
+    "purgecss": "purgecss --css build/css/style.css --content index.html dashboard.html incidencias.html login.html registro.html --output build/css/style.css"
   },
   "devDependencies": {
     "bootstrap": "^5.3.3",
+    "purgecss": "^7.0.2",
     "sass": "^1.85.1"
   },
   "dependencies": {
